@@ -16,11 +16,17 @@ document.addEventListener('DOMContentLoaded', () => {
         const profileNameElement = document.querySelector('.kids-link');
         const profileIconElement = document.querySelector('.profile-icon');
 
+        const normalizedProfileImage = profileImage.startsWith('./')
+            ? `../${profileImage.slice(2)}`
+            : profileImage.startsWith('assets/')
+                ? `../${profileImage}`
+                : profileImage;
+
         if (profileNameElement) {
             profileNameElement.textContent = profileName;
         }
         if (profileIconElement) {
-            profileIconElement.src = profileImage;
+            profileIconElement.src = normalizedProfileImage;
         }
     }
 
