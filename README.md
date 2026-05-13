@@ -14,7 +14,7 @@ Projeto criado durante a **Imersão Frontend com IA da Alura**, com foco em apre
 ## 🔗 Demo
 
 Acesse o projeto online:  
-https://github.com/jneres00/Clone-Netflix.git
+https://jneres00.github.io/Clone-Netflix/
 ---
 
 
